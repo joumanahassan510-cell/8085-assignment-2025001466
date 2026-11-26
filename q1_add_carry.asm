@@ -1,0 +1,20 @@
+; Name: Jomana Hassan Mahfouz
+; Student ID : 2025001466 
+; Section: 2
+; Question 1 : 8-Bit Addition with Carry
+
+LDA 2500H
+MOV B, A
+LDA 2501H
+ADD B
+STA 2502H
+
+
+MVI C, 00H
+JNC CARRY
+INR C
+
+
+CARRY: MOV A, C         
+STA 2503H       
+HLT
